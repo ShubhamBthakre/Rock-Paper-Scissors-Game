@@ -47,7 +47,7 @@ export const ScoreContainer = styled.div`
 export const ScoreText = styled.p`
   color: #223a5f;
   font-size: 18px;
-  font-family: 'Bree Serif';
+  font-family: 'Roboto';
   font-weight: 500;
   margin: 0px;
   @media screen and (min-width: 768px) {
@@ -58,7 +58,7 @@ export const ScoreText = styled.p`
 export const ScoreCount = styled.p`
   color: #223a5f;
   font-size: 42px;
-  font-family: 'Bree Serif';
+  font-family: 'Roboto';
   font-weight: 700;
   margin: 0px;
   @media screen and (min-width: 768px) {
@@ -85,6 +85,9 @@ export const ChoicesItemContainer = styled.ul`
 export const GameResultViewContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 `
 
 export const GameResultItemsContainer = styled.ul`
@@ -96,7 +99,6 @@ export const GameResultItemsContainer = styled.ul`
   width: 90%;
   max-width: 380px;
   @media screen and (min-width: 768px) {
-    width: 80%;
     max-width: 650px;
     margin-top: 80px;
   }
@@ -127,7 +129,15 @@ export const GameResultContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
-export const GameResultStatusText = styled(ScoreText)``
+export const GameResultStatusText = styled.p`
+  color: #ffffff;
+  font-size: 22px;
+  font-family: 'Bree Serif';
+  font-weight: 500;
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 15px;
+`
 
 export const PlayAgainButton = styled.button`
   background-color: #ffffff;
